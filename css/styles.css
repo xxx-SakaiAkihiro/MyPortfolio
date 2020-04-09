@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  color: #333;
+}
+
+header {
+  background: #f59a00;
+  color: #fff;
+  text-align: center;
+  padding-top: 64px;
+}
+
+header h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+header p {
+  font-size: 32px;
+  margin: 0;
+}
+
+header img {
+  width: 280px;
+  vertical-align: bottom;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.features .btn {
+  text-decoration: none;
+  text-align: center;
+  background: #f59a00;
+  color: #fff;
+  display: block;
+  width: 140px;
+  line-height: 44px;
+  margin: 40px auto 48px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.features img {
+  width: 100%;
+}
+
+.features > h1 {
+  text-align: center;
+  margin: 64px 0;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.features .container {
+  margin: 0 32px;
+}
+
+.features p {
+  line-height: 1.8;
+  margin: 0 auto;
+}
+
+.features section {
+  padding-bottom: 64px;
+}
+
+.member {
+  background: #f2f2f3;
+  padding-bottom: 64px;
+}
+
+.member > h1 {
+  text-align: center;
+  margin: 0;
+  padding: 64px 0;
+  font-size: 32px;
+  font-weight: normal;
+}
+.member img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  border-radius: 50%;
+  padding-bottom: 32px;
+}
+
+.member ul {
+  list-style: disc;
+  padding-left: 15px;
+  line-height: 1.8;
+}
+
+.member .ul-align-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  padding: 15px 0;
+  background: #323135;
+  color: #98969c;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  header .container {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  header .info {
+    width: 60%;
+    align-self: center;
+  }
+  header .pic {
+    width: 40%;
+  }
+
+  .features .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .features section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .features .pic {
+    width: 50%;
+  }
+
+  .features .info {
+    width: calc(50% - 32px);
+  }
+
+  .member .container {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .member ul {
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .member .ul-align-center {
+    display: flex;
+    align-self: center;
+  }
+}
